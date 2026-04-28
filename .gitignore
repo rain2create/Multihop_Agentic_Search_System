@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+training/outputs/
+results/
+tmp/
+*.log
+nohup.out
+# Environment / Secrets
+.env
+.env.local
+
+# Model weights
+models/
+
+# Large generated indexes (can be rebuilt with scripts/build_index.py)
+data/financial_all/indexes/*.pkl
+data/financial_all/indexes/*.index
+data/financial_all/indexes/*.jsonl
+
+# Large corpus files
+data/financial_all/corpus_*.json
+data/financial_all/corpus_all.json
+
+# Specific large embedding file
+data/financial_all/indexes/entity_embeddings.pkl
